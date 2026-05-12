@@ -5,7 +5,7 @@
 
 <div align="center">
    
-|WV Scanner|Multi WV Scanner Vulnerability Tool|for web application|
+|WV-Scanner|Multi WV Scanner Vulnerability Tool|for web application|
 |----------------|--------------|-------------|
 | `L`| `=`| `Local File Inclusion (LFI)`|
 | `O`| `=`| `Open Redirection (OR)`|
@@ -13,7 +13,7 @@
 | `S`| `=`| `Structured Query Language Injection (SQLi)`|
 |    |    | `Carriage Return Line Feed Injection (CRLF)`|
 
-> **WebScanner** is an easy-to-use tool that finds web issues like `LFI` - `OR` - `SQLi` - `XSS` - `CRLF`. <br><br> *`Made by`* - [`Mohsin Ahmad , Muhammad Umair Khan , Mustafa Kamal`](Use Github Link)
+> **WV-Scanner** is an easy-to-use tool that finds web issues like `LFI` - `OR` - `SQLi` - `XSS` - `CRLF`. <br><br> *`Made by`* - [`Mohsin Ahmad , Muhammad Umair Khan , Mustafa Kamal`]
 
 </div>
 
