@@ -139,7 +139,7 @@ But **this can break your system**, so use it only if you absolutely know what y
 ### Run the Script
 
 ```bash
-python3 WebScanner.py
+python3 WV-Scanner.py.py
 ```
 
 
