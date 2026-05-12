@@ -58,10 +58,10 @@
 ### Clone the repository
 
 ```bash
-git clone https://github.com/CybertipsCT/WebScannerTool.git
+git clone https://github.com/mohsinkhan34/WV-Scanner.git
 ```
 ```bash
-cd WebScanner
+cd WV Scanner
 ```
 
 ### Install the requirements
@@ -103,13 +103,13 @@ hint: See PEP 668 for the detailed specification.
 #### 1. Create a virtual environment:
 
 ```bash
-python3 -m venv WebScanner
+python3 -m venv WV Scanner
 ```
 
 #### 2. Activate it:
 
 ```bash
-source WebScanner/bin/activate
+source WVScanner/bin/activate
 ```
 Your prompt will now show something like `(venv)` to indicate you're in a virtual environment.
 
