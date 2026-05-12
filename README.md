@@ -61,7 +61,7 @@
 git clone https://github.com/mohsinkhan34/WV-Scanner.git
 ```
 ```bash
-cd WV Scanner
+cd WV-Scanner
 ```
 
 ### Install the requirements
@@ -103,13 +103,13 @@ hint: See PEP 668 for the detailed specification.
 #### 1. Create a virtual environment:
 
 ```bash
-python3 -m venv WV Scanner
+python3 -m venv WV-Scanner
 ```
 
 #### 2. Activate it:
 
 ```bash
-source WVScanner/bin/activate
+source WV-Scanner/bin/activate
 ```
 Your prompt will now show something like `(venv)` to indicate you're in a virtual environment.
 
