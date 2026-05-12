@@ -1,10 +1,11 @@
+
 <br>
 <br>
 <br>
 
 <div align="center">
    
-|WV Scanner|Multi Vulnerability Scanner|for web application|
+|WV Scanner|Multi WV Scanner Vulnerability Tool|for web application|
 |----------------|--------------|-------------|
 | `L`| `=`| `Local File Inclusion (LFI)`|
 | `O`| `=`| `Open Redirection (OR)`|
@@ -12,7 +13,7 @@
 | `S`| `=`| `Structured Query Language Injection (SQLi)`|
 |    |    | `Carriage Return Line Feed Injection (CRLF)`|
 
-> **WV Scanner** is an easy-to-use tool that finds web issues like `LFI` - `OR` - `SQLi` - `XSS` - `CRLF`. <br><br> *`Made by`* - [`Mohsin Ahmad`](https://github.com/) x [`Muhammad Umair Khan`](https://github.com/) x [`Mustafa Kamal`](https://github.com/) x [`x`](https://github.com/) x [`x`](https://github.com/) x [`x`](https://github.com/)!
+> **WebScanner** is an easy-to-use tool that finds web issues like `LFI` - `OR` - `SQLi` - `XSS` - `CRLF`. <br><br> *`Made by`* - [`Mohsin Ahmad , Muhammad Umair Khan , Mustafa Kamal`](Use Github Link)
 
 </div>
 
@@ -28,22 +29,23 @@
 | `LFI Scanner`                     | Detect Local File Inclusion vulnerabilities.                                |
 | `OR Scanner`                      | Identify Open Redirect vulnerabilities.                                     |
 | `SQL Scanner`                     | Detect SQL Injection vulnerabilities.                                       |
-| `XSS Scanner`                     | Identify Cross-Site Scripting vulnerabilities.                              |
-| `CRLF Scanner`                    | Detect Carriage Return Line Feed Injection vulnerabilities.                 |
-| `Multi-threaded Scanning`         | Improved performance through multi-threading.                               |
-| `Customizable Payloads`           | Adjust payloads to suit specific targets.                                   |
-| `Success Criteria`                | Modify success detection criteria for specific use cases.                   |
-| `User-friendly CLI`               | Simple and intuitive command-line interface.                                |
-| `Save Vulnerable URLs`            | Option to save vulnerable URLs to a file for future reference.              |
-| `HTML Report Generation`          | Generates a detailed HTML report of found vulnerabilities.                  |
-<!-- | `Share HTML Report via Telegram`  | Share HTML vulnerability reports directly through Telegram.                 | -->
-
+| `XSS Scanner`                     | Identify Cross-Site Scripting vulnerabilities.                      
+|
+| `CRLF Scanner`                    | Detect Carriage Return Line Feed Injection vulnerabilities.                    |
+| `Multi-threaded Scanning`         | Improved performance through multi-threading.                      
+|
+| `Customizable Payloads`           | Adjust payloads to suit specific targets.                            
+|
+| `Success Criteria`                | Modify success detection criteria for specific use cases.                              |
+| `User-friendly CLI`               | Simple and intuitive command-line interface.                          |
+| `Save Vulnerable URLs`            | Option to save vulnerable URLs to a file for future reference.                          |
+| `HTML Report Generation`          | Generates a detailed HTML report of found vulnerabilities.                    |
 <br>
 <hr>
 <br>
 <br>
 
-| Language                          | Packages                                                                    |
+| Language                          | Packages                                                                     |
 |-----------------------------------|-----------------------------------------------------------------------------|
 | ***Python***| `Python 3.x` `webdriver_manager` `selenium` `aiohttp` `beautifulsoup4` `colorama` `rich` `requests` `gitpython` `prompt_toolkit` `pyyaml` `Flask`|
 
@@ -51,34 +53,95 @@
 <hr>
 <br>
 
-## Installation
+## Installation With WSL Terminal (Windows Subsystem for Linux)
 
 ### Clone the repository
 
 ```bash
-git clone https://github.com/
+git clone https://github.com/CybertipsCT/WebScannerTool.git
 ```
 ```bash
-cd loxs
+cd WebScanner
 ```
 
 ### Install the requirements
 
 ```bash
 pip3 install -r requirements.txt
+
+```
+### If you Showing This Error You Must Create Virtual Environment
+
+```
+pip install -r requirements.txt
+error: externally-managed-environment
+
+× This environment is externally managed
+╰─> To install Python packages system-wide, try apt install
+    python3-xyz, where xyz is the package you are trying to
+    install.
+
+    If you wish to install a non-Kali-packaged Python package,
+    create a virtual environment using python3 -m venv path/to/venv.
+    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+    sure you have pypy3-venv installed.
+
+    If you wish to install a non-Kali-packaged Python application,
+    it may be easiest to use pipx install xyz, which will manage a
+    virtual environment for you. Make sure you have pipx installed.
+
+    For more information, refer to the following:
+    * https://www.kali.org/docs/general-use/python3-external-packages/
+    * /usr/share/doc/python3.13/README.venv
+
+note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+hint: See PEP 668 for the detailed specification.
+
+```
+### ✅ Recommended Way (Safe):
+
+#### 1. Create a virtual environment:
+
+```bash
+python3 -m venv WebScanner
+```
+
+#### 2. Activate it:
+
+```bash
+source WebScanner/bin/activate
+```
+Your prompt will now show something like `(venv)` to indicate you're in a virtual environment.
+
+#### 3. Install packages from `requirements.txt`:
+
+```bash
+pip install -r requirements.txt
+```
+---
+### ✅ If you don’t have `venv`:
+
+Install the required package:
+
+```bash
+sudo apt install python3-venv
+```
+### ⚠️ If You Still Want to Use System Environment (Not Recommended):
+```
+You can bypass the restriction with this command:
+
+```bash
+```
+pip install --break-system-packages -r requirements.txt
+```
+But **this can break your system**, so use it only if you absolutely know what you're doing.
 ```
 ### Run the Script
 
 ```bash
-python3 loxs.py
+python3 WebScanner.py
 ```
-<!-- to update the tool to the latest version
-```bash
-just edit the config.yml file with your tool directory
-after pressing 5 and exiting from the tool run the tool again it will run with an updated version
-``` -->
 
-----
 
 | Input Information         |                                                                                         |
 |---------------------------|-----------------------------------------------------------------------------------------|
@@ -137,28 +200,6 @@ sudo mv chromedriver /usr/bin
 ```
 <hr>
 
-> [!WARNING]  
-> WV Scanner is intended for educational and ethical hacking purposes only. It should only be used to test systems you own or have explicit permission to test. Unauthorized use of third-party websites or systems without consent is illegal and unethical.
-
-## 📊 Repository Stats
-
-[![License](https://img.shields.io/badge/BSD-3-Clause.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/downloads/)
-![GitHub repo size](https://img.shields.io/github/repo-size/coffinxp/loxs)
-![GitHub last commit](https://img.shields.io/github/last-commit/coffinxp/loxs)
-[![GitHub Stars](https://img.shields.io/github/stars/coffinxp/loxs?style=social)](https://github.com/coffinxp/loxs/stargazers)
-![GitHub issues](https://img.shields.io/github/issues/coffinxp/loxs)
-
 <br>
 
-<p align="center">
-<img src="https://github.com/user-attachments/assets/9ec3fed0-45ff-4cb3-988c-f8cd66e85082">
-</p>
-
-
 <br>
-
-
-
-
-
